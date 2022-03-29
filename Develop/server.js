@@ -1,6 +1,6 @@
 const express = require('express');
 const routes = require('./routes');
-// import sequelize connection
+const sequelize = require('./config/connection')
 
 const seedCategories = require('./seeds/category-seeds')
 const seedProducts = require('./seeds/product-seeds')
